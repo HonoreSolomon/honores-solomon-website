@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+#top {
+  margin-bottom: 5rem;
+}
+nav {
+  background-color: grey;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  position: sticky;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+#projects {
+  padding: 20rem;
+}
+.project-flex-container {
+  display: flex;
+  outline: auto;
+  margin: 1rem;
+}
+
+#home {
+  text-align: center;
+  padding: 20rem;
+  background-color: gray;
+}
+#about {
+  padding: 20rem;
+}
+
+#contact {
+  background-color: gray;
+  padding: 0.7rem;
+}
+.contact-container ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.contact-container li {
+  display: inline-block;
+}
+.contact-container li a {
+  color: black;
+  text-decoration: none;
+}
