@@ -28,43 +28,57 @@
         </ul>
       </nav>
       <section id="home">
-        <p>
-          Hello I'm Honore Solomon a Software Developer in Southern california
-        </p>
+        <h1>
+          Hello, I'm Honore Solomon a software developer in southern california
+        </h1>
       </section>
     </header>
     <main class="main-flex-container">
       <section id="projects">
+        <h2>Projects</h2>
         <div class="project-flex-container">
           <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Vero dicta porro nihil fugiat nobis, dolorem
-            impedit necessitatibus eum aperiam molestiae iste quisquam tempora!
-            Veritatis laudantium sapiente commodi quos quis sint.
+            <h3><a href="#">SalesForce Dashboard Refresh</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              dicta porro nihil fugiat nobis, dolorem impedit necessitatibus eum
+              aperiam molestiae iste quisquam tempora! Veritatis laudantium
+              sapiente commodi quos quis sint.
+            </p>
           </div>
           <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Cum dignissimos, aliquam doloremque laudantium
-            error at incidunt nam odit id veritatis quibusdam omnis provident
-            totam cupiditate voluptatem inventore repellendus hic esse?
+            <h3><a href="#">SalesForce Dashboard Refresh</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              dicta porro nihil fugiat nobis, dolorem impedit necessitatibus eum
+              aperiam molestiae iste quisquam tempora! Veritatis laudantium
+              sapiente commodi quos quis sint.
+            </p>
           </div>
           <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Est optio laboriosam earum pariatur doloribus
-            consequuntur iusto porro nostrum vero maiores, dolorem minus amet
-            unde incidunt eum voluptatem nihil eos ipsa.
+            <h3><a href="#">SalesForce Dashboard Refresh</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              dicta porro nihil fugiat nobis, dolorem impedit necessitatibus eum
+              aperiam molestiae iste quisquam tempora! Veritatis laudantium
+              sapiente commodi quos quis sint.
+            </p>
           </div>
           <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aspernatur aperiam fugiat eligendi laboriosam,
-            vero impedit hic illo debitis odio vitae maiores. Veniam eveniet
-            minima optio adipisci illum neque magni libero.
+            <h3><a href="#">SalesForce Dashboard Refresh</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              dicta porro nihil fugiat nobis, dolorem impedit necessitatibus eum
+              aperiam molestiae iste quisquam tempora! Veritatis laudantium
+              sapiente commodi quos quis sint.
+            </p>
           </div>
         </div>
       </section>
       <section id="about">
-        <div class="Bio">
-          <h2>About</h2>
+        <h2>About</h2>
+        <div class="bio">
+          <h3>Hello!</h3>
           <p>
             I live in southern california and am orginaly from the coachella
             valley (aka Palm Springs). My whole life I have been interesrted in
@@ -85,32 +99,82 @@
             voluptas, id earum itaque provident illum harum.
           </p>
         </div>
-        <div class="skills">
-          <h4>Programing Skills</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-          </ul>
+      </section>
+      <section id="skills">
+        <h2>Programing Skills</h2>
+        <div class="skills-flex-container">
+          <div class="project-card">
+            <h3>
+              <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+                >Html5</a
+              >
+            </h3>
+            <img src="imgs/html5.png" alt="Html5 Icon" />
+          </div>
+          <div class="project-card">
+            <h3>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                >Css3</a
+              >
+            </h3>
+            <img src="imgs/css3.png" alt="Css3 Icon" />
+          </div>
+          <div class="project-card">
+            <h3>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                >JavaScript</a
+              >
+            </h3>
+            <img src="imgs/js.png" alt="JavaScript Icon" />
+          </div>
+          <div class="project-card">
+            <h3><a href="https://www.python.org/">Python</a></h3>
+            <img src="imgs/python.png" alt="Python Icon" />
+          </div>
         </div>
       </section>
     </main>
-    <footer id="contact">
+    <footer id="footer">
       <div class="contact-container">
         <ul>
           <li>
             <a href="https://github.com/HonoreSolomon" target="_blank"
               >Github</a
             >
+            <img src="imgs/github.png" alt="Github Icon" />
           </li>
           <li>
-            <a href="www.linkedin.com/in/honore-solomon" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/honore-solomon/"
+              target="_blank"
               >LinkedIn</a
             >
+            <img src="imgs/linkedin.png" alt="LinkedIn" />
           </li>
-          <li><a href="#email-form-popup">honoresolomon@hotmail.com</a></li>
         </ul>
+        <!-- /.social-links -->
+        <dialog id="contact-dialog">
+            <form method="dialog">
+                <form action="" method="get" class="dialog-form">
+                    <div class="form-fields">
+                        <label for="name">Enter your name: </label>
+                        <input type="text" name="name" id ="name" required>
+                    </div> <!-- /.form-fields -->
+                    <div class="form-fields">
+                        <label for="email">Enter your email: </label>
+                        <input type="text" name="email" id ="email" required>
+                    </div> <!-- /.form-fields -->
+                    <div class="form-fields">
+                        <button value="cancel">Cancel</button>
+                        <input type="submit" value="Send info">
+                    </div> <!-- /.form-fields -->
+                </form>
+            </form>
+        </dialog>
+
+                </p>
+            <button id="contact-button">Contact Me!!</button>
+        </dialog>
       </div>
     </footer>
   </body>
