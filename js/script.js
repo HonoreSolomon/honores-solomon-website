@@ -1,6 +1,6 @@
-const contactButton = document.querySelector("#contact-button");
-const contactDialog = document.querySelector("#contact-dialog");
+// const contactButton = document.querySelector("#contact-button");
+// const contactDialog = document.querySelector("#contact-dialog");
 
-contactButton.addEventListener("click", () => {
-  contactDialog.showModal();
-});
+// contactButton.addEventListener("click", () => {
+//   contactDialog.showModal();
+// });
