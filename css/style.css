@@ -32,7 +32,9 @@ a ,a:visited{
   text-decoration: none;
   color: var(--main-text-color)
 }
-
+a:hover{
+  color: var(--main-primary-color);
+}
 
 h2 {
   text-align: center;
@@ -84,7 +86,7 @@ nav {
   text-shadow: #343a40 1px 1px;
 }
 .nav-links a {
-  color: var(--main-bg-color);
+  color: #fff;
 }
 
 
@@ -185,18 +187,30 @@ h1 {
 /*       Projects      */
 
 .project-flex-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin: 0 20% 0;
 
 }
 
-.box {
+.project-card .box {
   background-color: #fff;
-  margin: 0 20% 0;
   position: relative;
   border-radius: 5px;
   padding: 1rem;
 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.box {
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 20% 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -227,9 +241,9 @@ h1 {
 }
 
 .project-card h3 {
-  font-size: 1.3rem;
+  font-size: 22px;
   text-align: left;
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 .project-card h3 a {
@@ -327,3 +341,17 @@ z-index: 9999;
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .project-flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .skills-flex-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
