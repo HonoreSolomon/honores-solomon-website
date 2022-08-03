@@ -28,11 +28,12 @@ li {
   list-style-type: none;
 }
 
-a ,a:visited{
+a,
+a:visited {
   text-decoration: none;
-  color: var(--main-text-color)
+  color: var(--main-text-color);
 }
-a:hover{
+a:hover {
   color: var(--main-primary-color);
 }
 
@@ -88,8 +89,6 @@ nav {
 .nav-links a {
   color: #fff;
 }
-
-
 
 main {
   display: flex;
@@ -162,14 +161,14 @@ main {
   font-size: 32px;
 }
 h1 {
-  font-size: 64px;
+  font-size: 4rem;
   color: rgb(246, 246, 246);
   font-family: "Merriweather", sans-serif;
   font-weight: 400;
   letter-spacing: 6px;
 }
 
-.hero-arrow{
+.hero-arrow {
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -182,20 +181,13 @@ h1 {
   opacity: 1;
 }
 
-
-
 /*       Projects      */
 
 .project-container {
-
-
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 50px;
   margin: 0 15% 0;
-
-
 }
 
 .project-card .box {
@@ -253,7 +245,7 @@ h1 {
   font-family: "Rubik", sans-serif;
   font-style: italic;
 }
-.project-card p{
+.project-card p {
   font-size: 16px;
   line-height: 1.4;
 }
@@ -279,29 +271,23 @@ h1 {
 }
 
 .skills-container {
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 50px;
   margin: 0 15% 0;
-
-
 }
 .skills-container .project-card {
   padding: 1.5rem;
   display: flex;
-  justify-content: center; 
-
+  justify-content: center;
 }
-.skills-container .project-card a:hover{
+.skills-container .project-card a:hover {
   text-decoration: underline;
-
 }
 
 /* footer */
 
 #footer {
-
   padding: 1rem;
   margin: 0;
   background-color: #fff;
@@ -309,67 +295,128 @@ h1 {
 }
 
 .contact-container {
-
-z-index: 9999;
+  z-index: 9999;
   position: fixed;
   top: 50vh;
-  left: -7vw;
-
-
-
-
-
+  left: -8rem;
 
   color: #f4faff;
-  transition: ease-in-out;
 }
-.contact-container ul{
+.contact-container ul {
   margin: 0;
   padding: 0;
-  text-align: right;
 }
-.contact-container li {
-  margin:0;
-  padding: 16px 24px;
-  display: block;
-  font-size: 1.2rem;
 
+.contact-container li {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  font-size: 1.2rem;
+  transition: 1s;
+
+  align-items: center;
 }
-.contact-container li:hover{
+.contact-container li:hover {
   cursor: pointer;
-  transform: translateX(80px);
-  transition: 1s ;
+  transform: translateX(8rem);
 }
-.contact-container li:nth-child(1){
+.contact-container li:nth-child(1) {
   background-color: var(--main-primary-color);
 }
-.contact-container li:nth-child(2){
+.contact-container li:nth-child(2) {
   background-color: var(--main-secondary-color);
 }
-.contact-container li:nth-child(3){
+.contact-container li:nth-child(3) {
   background-color: var(--main-text-color);
 }
 .contact-container a {
   color: #f4faff;
-  border-radius: 5px;
+  display: inline-block;
+  width: 8rem;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.email-link{
+.email-link {
   text-decoration: none;
 }
-/* 
-@media (max-width: 768px) {
-  .project-container{
-    display: flex;
-    flex-direction: column;
-  }
 
+@media screen and (max-width: 1024px) {
+  .contact-container a {
+    width: 6rem;
+  }
+  .contact-container {
+    left: -6rem;
+  }
+  .contact-container li {
+    padding: 0.7rem;
+  }
+  .contact-container li:hover {
+    transform: translateX(6rem);
+  }
+  .hero-message h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .hero-message h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-container a {
+    width: 4rem;
+    font-size: 0.9rem;
+  }
+  .contact-container {
+    left: -4rem;
+  }
+  .contact-container li {
+    padding: 0.5rem;
+  }
+  .contact-container li:hover {
+    transform: translateX(4rem);
+  }
+  .hero-message h2 {
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+  .hero-message h1 {
+    font-size: 2.5rem;
+  }
 }
 
-@media (max-width: 1200px) {
-  .skills-container{
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 415px) {
+  .contact-container a {
+    width: 4rem;
+    font-size: 0.9rem;
   }
-} */
+  .contact-container {
+    left: -4rem;
+  }
+  .contact-container li {
+    padding: 0.5rem;
+  }
+  .contact-container li:hover {
+    transform: translateX(4rem);
+  }
+  .hero-message h2 {
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+  .hero-message h1 {
+    font-size: 2.5rem;
+  }
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  .page-section h2 {
+    position: relative;
+    top: 1.5rem;
+  }
+}
