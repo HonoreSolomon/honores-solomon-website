@@ -285,7 +285,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(200px, 1fr)
+    minmax(200pxsff, 1fr)
   );
   gap: 3rem;
   margin: 0 15% 0;
