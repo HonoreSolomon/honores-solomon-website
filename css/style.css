@@ -101,7 +101,7 @@ main {
   position: relative;
   /* padding: 20rem 8rem; */
   min-height: 100vh;
-  background-image: url(imgs/palm-desert.jpg);
+  background-image: url('imgs/palm-desert.jpg');
 
   /* outline: auto; */
   display: flex;
@@ -109,7 +109,7 @@ main {
 }
 
 .hero-section::before {
-  background-image: url(/imgs/palm-desert.jpg);
+  background-image: url('imgs/palm-desert.jpg');
   background-size: cover;
   background-position: bottom;
   content: '';
