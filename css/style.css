@@ -41,7 +41,7 @@ h2 {
   text-align: center;
   font-size: 32px;
   font-weight: 400;
-  padding-top: 1rem;
+  padding-top: 3rem;
   font-family: 'Merriweather', sans-serif;
   letter-spacing: 2.8px;
 }
@@ -99,17 +99,14 @@ main {
   width: 100%;
   height: 100%;
   position: relative;
-  /* padding: 20rem 8rem; */
   min-height: 100vh;
-  background-image: url('imgs/palm-desert.jpg');
 
-  /* outline: auto; */
   display: flex;
   align-items: center;
 }
 
 .hero-section::before {
-  background-image: url('imgs/palm-desert.jpg');
+  background-image: url('../imgs/palm-desert.jpg');
   background-size: cover;
   background-position: bottom;
   content: '';
@@ -285,7 +282,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(200pxsff, 1fr)
+    minmax(200px, 1fr)
   );
   gap: 3rem;
   margin: 0 15% 0;
@@ -508,5 +505,5 @@ h1 {
 }
 
 #contact-form textarea::placeholder {
-  transform: translate(90px -30px);
+  transform: translate(90px, -30px);
 }
