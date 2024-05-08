@@ -3,115 +3,321 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta name="author" content="Honore Solomon" />
-    <meta name="description" content="A personal portfolio website" />
+    <meta
+      name="description"
+      content="A personal portfolio website"
+      />
+      <title>Honore Solomon Website</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,600&display=swap"
+      rel="shortcut icon"
+      href="imgs/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;300&family=Roboto&family=Rubik:ital,wght@0,300;400;600;1,300&display=swap"
       rel="stylesheet"
     />
-    <title>Honore Solomon Website</title>
+    <script src="js/script.js" defer></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
   <body>
     <header id="top">
+      <section
+        id="home"
+        class="page-section hero-section flex-center"
+      >
+        <div class="hero-message">
+          <h1 class="hero-title">Hello</h1>
+          <h2 class="hero-sub-title">
+            I'm Honore Solomon a software developer from
+            Palm Springs, CA
+          </h2>
+        </div>
+        <!-- /.hero-message -->
+        <a href="#projects" class="hero-arrow">
+          <i5
+            class="ph-caret-double-down ph-3x"
+            style="
+              color: #fff;
+              position: relative;
+              top: 40vh;
+            "
+          ></i5
+        ></a>
+      </section>
+    </header>
+    <aside class="contact-container">
+      <ul>
+        <li>
+          <a
+            href="https://github.com/HonoreSolomon"
+            target="_blank"
+            >Github</a
+          >
+          <div class="icon">
+            <i class="ph ph-github-logo"></i>
+          </div>
+          <!-- /.icon -->
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/honore-solomon/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <div class="icon">
+            <i class="ph ph-linkedin-logo"></i>
+          </div>
+          <!-- /.icon -->
+        </li>
+        <li>
+          <a
+            href="mailto:honoresolomon@hotmail.com"
+            id="contact-button"
+            \
+            target="_blank"
+            class="email-link"
+            >Email</a
+          >
+          <div class="icon">
+            <i class="ph ph-envelope"></i>
+          </div>
+          <!-- /.icon -->
+        </li>
+      </ul>
+    </aside>
+    <main class="page-main">
       <nav>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
       </nav>
-      <section id="home">
-        <p>
-          Hello I'm Honore Solomon a Software Developer in Southern california
-        </p>
+      <section
+        id="projects"
+        class="page-section project-section"
+      >
+        <h2>PROJECTS</h2>
+        <div class="project-container container">
+          <div class="project-card box project-card--work">
+            <h3>
+              <a
+                href="https://honoresolomon.github.io/odinProject-Library/"
+                target="_blank"
+                >Library Dashboard
+                <img
+                  class="project__img"
+                  src="imgs/library.png"
+                  alt="Library Dashboard Screenshot"
+                />
+              </a>
+            </h3>
+            <p>
+              A dynamic library dashboard that allows new
+              books to be added to your page after being
+              submitted. There are also options to change
+              status and delete the book.
+            </p>
+            <div class="project__links">
+              <button>
+                <a
+                  href="https://honoresolomon.github.io/odinProject-Library/"
+                  target="_blank"
+                  >Live Site</a
+                >
+              </button>
+
+              
+              <button>
+                <a
+                  href="https://github.com/HonoreSolomon/odinProject-Library"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project-card box project-card--work">
+            <h3>
+              <a
+                href="https://honoresolomon.github.io/odin-calculator/"
+                target="_blank"
+                >Iphone Calculator
+                <img
+                  class="project__img"
+                  src="imgs/calculatorf.png"
+                  alt="Iphone Calculator"
+              /></a>
+            </h3>
+            <p>
+              A replica Iphone calculator that utilized
+              dom-manipulation and functions to be a
+              functioning replica of the iphone app.
+            </p>
+            <div class="project__links">
+              <button>
+
+                <a
+                href="https://honoresolomon.github.io/odin-calculator/"
+                target="_blank"
+                >Live Site</a
+                >
+              </button>
+              
+              <button>
+
+                <a
+                href="https://github.com/HonoreSolomon/odin-calculator"
+                target="_blank"
+                >Source Code</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project-card box project-card--work">
+            <h3>
+              <a href="#" target="_blank"
+                >SalesForce Refresh Extension
+              </a>
+            </h3>
+            <p>
+              Extension on the google chrome store that used
+              the chrome api to manipulate page storage to
+              inject the Extension script when on the
+              correct page. Also utilized chrome storage to
+              keep to chosen intervals for each user.
+            </p>
+            <div class="project__links">
+              
+              <button>
+
+                <a
+                href="https://github.com/HonoreSolomon/SalesForce-Refresh-Plugin"
+                target="_blank"
+                >Source Code</a
+                >
+              </button>
+              
+            </div>
+          </div>
+
+          <div class="project-card box project-card--work">
+            <h3>
+              <a href="https://honoresolomon.github.io/Odin-rockpaperscissors/" target="_blank"
+                >Rock Paper Scissors
+                <img
+                  class="project__img"
+                  src="imgs/rockpaperscissors.png"
+                  alt="Rock Paper Scissors"
+              /></a>
+            </h3>
+            <p>
+              This is a browser game of rock paper Scissors with the computer. A numerical algorithm was used to keep score and track who wins each game. 
+            </p>
+            <div class="project__links">
+              <button>
+
+                <a href="https://honoresolomon.github.io/Odin-rockpaperscissors/" target="_blank">Live Site</a>
+                
+                <button>
+                  
+                  <a href="https://github.com/HonoreSolomon/Odin-rockpaperscissors" target="_blank">Source Code</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- /.color -->
+        </button>
       </section>
-    </header>
-    <main class="main-flex-container">
-      <section id="projects">
-        <div class="project-flex-container">
-          <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Vero dicta porro nihil fugiat nobis, dolorem
-            impedit necessitatibus eum aperiam molestiae iste quisquam tempora!
-            Veritatis laudantium sapiente commodi quos quis sint.
-          </div>
-          <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Cum dignissimos, aliquam doloremque laudantium
-            error at incidunt nam odit id veritatis quibusdam omnis provident
-            totam cupiditate voluptatem inventore repellendus hic esse?
-          </div>
-          <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Est optio laboriosam earum pariatur doloribus
-            consequuntur iusto porro nostrum vero maiores, dolorem minus amet
-            unde incidunt eum voluptatem nihil eos ipsa.
-          </div>
-          <div class="project-card">
-            SalesForce Dashboard Refresh Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aspernatur aperiam fugiat eligendi laboriosam,
-            vero impedit hic illo debitis odio vitae maiores. Veniam eveniet
-            minima optio adipisci illum neque magni libero.
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <div class="Bio">
-          <h2>About</h2>
+      <section
+        id="about"
+        class="page-section about-section"
+      >
+        <h2>ABOUT</h2>
+        <div class="bio container box">
+          <h3>Hello!</h3>
           <p>
-            I live in southern california and am orginaly from the coachella
-            valley (aka Palm Springs). My whole life I have been interesrted in
-            technology, from hardware to software I enjoy anything that is new
-            and high tech. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Ullam commodi laudantium ea, hic quibusdam illum voluptatibus
-            eum, accusamus nulla ratione pariatur possimus adipisci perferendis
-            cum quis error voluptas vel cumque. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Atque numquam nobis accusantium? Nam
-            nesciunt cum et, minus adipisci animi? Itaque, alias. Eum rem dolore
-            obcaecati fugit, atque dicta omnis eius. Corporis suscipit et harum
-            consequuntur, id rem. Itaque recusandae quidem explicabo deleniti
-            incidunt animi perferendis aliquam fugit assumenda temporibus
-            cupiditate laboriosam vel vero aliquid non sapiente numquam,
-            reprehenderit cum minus! Maxime dolorum tempora mollitia fugiat?
-            Doloremque in, officia officiis asperiores dignissimos at! Esse quae
-            libero placeat blanditiis dicta assumenda quas obcaecati velit eum
-            voluptas, id earum itaque provident illum harum.
+            I am a tech enthusiast who loves to learn. I
+            enjoy the rush of a new challenge and task to
+            accomplish. I'm focused, diligent, and
+            hardworking. I provide leadership and clear
+            communication to teams I am apart of which is
+            something I enjoy. If I'm not coding you can
+            find me outside. I really enjoy walks and hikes
+            to refresh my mind after working. Thanks for
+            listening to a little about me enjoy the rest of
+            your stay!
           </p>
         </div>
-        <div class="skills">
-          <h4>Programing Skills</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-          </ul>
+      </section>
+      <section
+        id="skills"
+        class="page-section skills-section"
+      >
+        <h2>PROGRAMMING SKILLS</h2>
+        <div class="skills-container container">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"
+            >
+          <div class="project-card box">
+            <h3>
+                Html5
+                
+              </h3>
+              <img src="imgs/html5.png" alt="Html5 Icon" />
+            </div>
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+            >
+          <div class="project-card box">
+            <h3>
+                Css3
+                
+                
+              </h3>
+              <img src="imgs/css3.png" alt="Css3 Icon" />
+            </div>
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+            >
+          <div class="project-card box">
+            <h3>
+                JavaScript
+                
+              </h3>
+              <img src="imgs/js.png" alt="JavaScript Icon" />
+            </div>
+          </a>
+          <a href="https://git-scm.com/" target="_blank">
+          <div class="project-card box">
+            <h3>
+                Git
+              </h3>
+              <img src="imgs/Git-Icon.png" alt="Git Icon" />
+            </div>
+          </a>
         </div>
       </section>
     </main>
-    <footer id="contact">
-      <div class="contact-container">
-        <ul>
-          <li>
-            <a href="https://github.com/HonoreSolomon" target="_blank"
-              >Github</a
-            >
-          </li>
-          <li>
-            <a href="www.linkedin.com/in/honore-solomon" target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="#email-form-popup">honoresolomon@hotmail.com</a></li>
-        </ul>
-      </div>
-    </footer>
   </body>
 </html>
