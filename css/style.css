@@ -101,7 +101,7 @@ main {
   position: relative;
   /* padding: 20rem 8rem; */
   min-height: 100vh;
-  background-image: url('imgs/palm-desert.jpg');
+  background-image: url('../imgs/palm-tree.jpg');
 
   /* outline: auto; */
   display: flex;
@@ -109,7 +109,7 @@ main {
 }
 
 .hero-section::before {
-  background-image: url('imgs/palm-desert.jpg');
+  background-image: url('../imgs/palm-tree.jpg');
   background-size: cover;
   background-position: bottom;
   content: '';
@@ -285,7 +285,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(200pxsff, 1fr)
+    minmax(200px, 1fr)
   );
   gap: 3rem;
   margin: 0 15% 0;
@@ -455,58 +455,14 @@ h1 {
   gap: 1rem;
 }
 
-.project__links button {
-  padding: 0.8rem;
-  background-color: #7c3aed;
-  border-radius: 15px;
-  border: none;
-}
-
 .project__links a {
   color: #faf5ff;
-}
-
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  background: white;
-  transform: translate(-50%, -50%);
-  padding: 2rem 3rem;
-  gap: 2rem;
-  z-index: 1000;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  width: 25%;
-}
-
-#contact-form h3 {
-  text-align: center;
-  font-size: 1.7rem;
-  margin: 0 0 1rem 0;
-}
-
-#contact-form input {
-  padding: 1rem;
-
-  border: solid 1px #27272a;
-}
-
-#contact-form input[type='submit'] {
-  padding: 1rem;
+  padding: 20px 34px;
   background-color: #7c3aed;
-  color: #fff;
+  border-radius: 15px;
   border: none;
-}
-
-#contact-form textarea {
-  min-height: 8rem;
-  padding: 1rem;
-}
-
-#contact-form textarea::placeholder {
-  transform: translate(90px -30px);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
 }
